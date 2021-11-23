@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html class="page-html" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Online jewelry store">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/cormorant-garamond-medium-italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/cormorant-garamond-semi-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/poppins-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/poppins-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/poppins-regular.woff2" as="font" crossorigin="anonymous">
+
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="page-body">
+    <header class="header">
+      <h1 class="visually-hidden">Online jewelry store</h1>
+      <div class="header__upper-block-wrapper">
+        <div class="header__upper-block container">
+          <button class="header__toggle-menu" type="button" aria-label="open/close menu button"></button>
+          <div class="header__form-desktop">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label>
+                <svg width="14" height="14">
+                  <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                </svg>
+                <input type="text" name="search" placeholder="Type here to search">
+              </label>
+            </form>
+          </div>
+          <div class="header__logo">
+            <img src="img/svg/logo.svg" alt="Логотип компании Jewellery" width="66" height="66">
+          </div>
+          <div class="user-nav">
+            <a class="user-nav__link-login user-nav__link link-login" href="login.html">Login
+            </a>
+            <a class="user-nav__link-cart user-nav__link" href="#">
+              <span class="user-nav__link-cart-title">Cart</span>
+              <span class="user-nav__link-cart-counter">0</span>
+              <svg width="20" height="18">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__lower-block container">
+        <div class="header__form-tablet">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label>
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-search-tablet"></use>
+              </svg>
+              <input type="text" name="search">
+            </label>
+          </form>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">What’s new</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Chokers</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Necklaces</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Rings</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Earrings</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="additional-menu">
+          <ul class="additional-menu__list">
+            <li class="additional-menu__item">
+              <a class="additional-menu__link" href="#">About CH</a>
+            </li>
+            <li class="additional-menu__item">
+              <a class="additional-menu__link" href="#">Stores & Hours</a>
+            </li>
+            <li class="additional-menu__item">
+              <a class="additional-menu__link" href="#">Contact Us</a>
+            </li>
+            <li class="additional-menu__item">
+              <a class="additional-menu__link additional-menu__link-login link-login" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="intro">
+        <p class="intro__title">PERFECTION</p>
+        <p class="intro__description">made to be yours</p>
+      </div>
+
+      <div class="container">
+        <section class="new">
+          <h2 class="new__title">New In</h2>
+          <a class="new__link underlined-link" href="catalog.html">Shop Now</a>
+          <div class="slider">
+            <button class="slider__arrow slider__arrow--prev" aria-label="slide back"></button>
+            <button class="slider__arrow slider__arrow--next" aria-label="slide forth"></button>
+            <div class="slider__window">
+              <ul class="slider__list no-js">
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-1-mobile-@1x.webp 1x,
+                          img/content/slide-1-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-1-tablet-@1x.webp 1x,
+                          img/content/slide-1-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-1-desktop-@1x.webp 1x,
+                          img/content/slide-1-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-1-mobile-@1x.jpg 1x,
+                          img/content/slide-1-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-1-tablet-@1x.jpg 1x,
+                          img/content/slide-1-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-1-desktop-@1x.jpg" srcset="
+                          img/content/slide-1-desktop-@1x.jpg 1x,
+                          img/content/slide-1-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Necklace with amethyst</span>
+                    <span class="slider__price">$ 145</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-2-mobile-@1x.webp 1x,
+                          img/content/slide-2-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-2-tablet-@1x.webp 1x,
+                          img/content/slide-2-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-2-desktop-@1x.webp 1x,
+                          img/content/slide-2-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-2-mobile-@1x.jpg 1x,
+                          img/content/slide-2-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-2-tablet-@1x.jpg 1x,
+                          img/content/slide-2-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-2-desktop-@1x.jpg" srcset="
+                          img/content/slide-2-desktop-@1x.jpg 1x,
+                          img/content/slide-2-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Layered сhoker</span>
+                    <span class="slider__price">$ 115</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-3-mobile-@1x.webp 1x,
+                          img/content/slide-3-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-3-tablet-@1x.webp 1x,
+                          img/content/slide-3-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-3-desktop-@1x.webp 1x,
+                          img/content/slide-3-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-3-mobile-@1x.jpg 1x,
+                          img/content/slide-3-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-3-tablet-@1x.jpg 1x,
+                          img/content/slide-3-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slider-3-desktop-@1x.jpg" srcset="
+                          img/content/slide-3-desktop-@1x.jpg 1x,
+                          img/content/slide-3-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Gold chain</span>
+                    <span class="slider__price">$ 215</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-4-mobile-@1x.webp 1x,
+                          img/content/slide-4-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-4-tablet-@1x.webp 1x,
+                          img/content/slide-4-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-4-desktop-@1x.webp 1x,
+                          img/content/slide-4-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-4-mobile-@1x.jpg 1x,
+                          img/content/slide-4-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-4-tablet-@1x.jpg 1x,
+                          img/content/slide-4-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-4-desktop-@1x.jpg" srcset="
+                          img/content/slide-4-desktop-@1x.jpg 1x,
+                          img/content/slide-4-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Galaxy earrings</span>
+                    <span class="slider__price">$ 95</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-5-mobile-@1x.webp 1x,
+                          img/content/slide-5-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-5-tablet-@1x.webp 1x,
+                          img/content/slide-5-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-5-desktop-@1x.webp 1x,
+                          img/content/slide-5-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-5-mobile-@1x.jpg 1x,
+                          img/content/slide-5-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-5-tablet-@1x.jpg 1x,
+                          img/content/slide-5-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-5-desktop-@1x.jpg" srcset="
+                          img/content/slide-5-desktop-@1x.jpg 1x,
+                          img/content/slide-5-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Double pearl earrings
+                    </span>
+                    <span class="slider__price">$ 115</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-6-mobile-@1x.webp 1x,
+                          img/content/slide-6-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-6-tablet-@1x.webp 1x,
+                          img/content/slide-6-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-6-desktop-@1x.webp 1x,
+                          img/content/slide-6-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-6-mobile-@1x.jpg 1x,
+                          img/content/slide-6-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-6-tablet-@1x.jpg 1x,
+                          img/content/slide-6-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/gallery-6-desktop-@1x.jpg" srcset="
+                          img/content/slide-6-desktop-@1x.jpg 1x,
+                          img/content/slide-6-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Blue gemstone pendant</span>
+                    <span class="slider__price">$ 105</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-7-mobile-@1x.webp 1x,
+                          img/content/slide-7-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-7-tablet-@1x.webp 1x,
+                          img/content/slide-7-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-7-desktop-@1x.webp 1x,
+                          img/content/slide-7-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-7-mobile-@1x.jpg 1x,
+                          img/content/slide-7-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-7-tablet-@1x.jpg 1x,
+                          img/content/slide-7-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-7-desktop-@1x.jpg" srcset="
+                          img/content/slide-7-desktop-@1x.jpg 1x,
+                          img/content/slide-7-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Marble earrings</span>
+                    <span class="slider__price">$ 95</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-8-mobile-@1x.webp 1x,
+                          img/content/slide-8-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-8-tablet-@1x.webp 1x,
+                          img/content/slide-8-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-8-desktop-@1x.webp 1x,
+                          img/content/slide-8-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-8-mobile-@1x.jpg 1x,
+                          img/content/slide-8-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-8-tablet-@1x.jpg 1x,
+                          img/content/slide-8-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-8-desktop-@1x.jpg" srcset="
+                          img/content/slide-8-desktop-@1x.jpg 1x,
+                          img/content/slide-8-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Threader necklace</span>
+                    <span class="slider__price">$ 115</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-9-mobile-@1x.webp 1x,
+                          img/content/slide-9-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-9-tablet-@1x.webp 1x,
+                          img/content/slide-9-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-9-desktop-@1x.webp 1x,
+                          img/content/slide-9-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-9-mobile-@1x.jpg 1x,
+                          img/content/slide-9-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-9-tablet-@1x.jpg 1x,
+                          img/content/slide-9-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-9-desktop-@1x.jpg" srcset="
+                          img/content/slide-9-desktop-@1x.jpg 1x,
+                          img/content/slide-9-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Origami crane necklace</span>
+                    <span class="slider__price">$ 105</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-10-mobile-@1x.webp 1x,
+                          img/content/slide-10-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-10-tablet-@1x.webp 1x,
+                          img/content/slide-10-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-10-desktop-@1x.webp 1x,
+                          img/content/slide-10-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-10-mobile-@1x.jpg 1x,
+                          img/content/slide-10-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-10-tablet-@1x.jpg 1x,
+                          img/content/slide-10-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-10-desktop-@1x.jpg" srcset="
+                          img/content/slide-10-desktop-@1x.jpg 1x,
+                          img/content/slide-10-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Black leather choker</span>
+                    <span class="slider__price">$ 85</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-11-mobile-@1x.webp 1x,
+                          img/content/slide-11-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-11-tablet-@1x.webp 1x,
+                          img/content/slide-11-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-11-desktop-@1x.webp 1x,
+                          img/content/slide-11-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-11-mobile-@1x.jpg 1x,
+                          img/content/slide-11-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-11-tablet-@1x.jpg 1x,
+                          img/content/slide-11-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-11-desktop-@1x.jpg" srcset="
+                          img/content/slide-11-desktop-@1x.jpg 1x,
+                          img/content/slide-11-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Elephant earrings</span>
+                    <span class="slider__price">$ 95</span>
+                  </a>
+                </li>
+                <li class="slider__item">
+                  <a class="slider__link" href="#">
+                    <picture class="slider__picture">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="
+                          img/content/slide-12-mobile-@1x.webp 1x,
+                          img/content/slide-12-mobile-@2x.webp 2x
+                        ">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="
+                          img/content/slide-12-tablet-@1x.webp 1x,
+                          img/content/slide-12-tablet-@2x.webp 2x
+                        ">
+                      <source type="image/webp" srcset="
+                          img/content/slide-12-desktop-@1x.webp 1x,
+                          img/content/slide-12-desktop-@2x.webp 2x
+                        ">
+
+                      <source media="(max-width: 767px)" srcset="
+                          img/content/slide-12-mobile-@1x.jpg 1x,
+                          img/content/slide-12-mobile-@2x.jpg 2x
+                        ">
+                      <source media="(max-width: 1023px)" srcset="
+                          img/content/slide-12-tablet-@1x.jpg 1x,
+                          img/content/slide-12-tablet-@2x.jpg 2x
+                        ">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img src="img/content/slide-12-desktop-@1x.jpg" srcset="
+                          img/content/slide-12-desktop-@1x.jpg 1x,
+                          img/content/slide-12-desktop-@2x.jpg 2x
+                        " alt="Фотография ювелирного украшения" width="270" height="284"></picture>
+                    <span class="slider__description">Gold bird necklace</span>
+                    <span class="slider__price">$ 135</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__pagination">
+              <button class="
+                  slider__button-pagination slider__button-pagination--active
+                " aria-label="first page">
+                1
+              </button>
+              <button class="slider__button-pagination" aria-label="second page">
+                2
+              </button>
+              <button class="slider__button-pagination" aria-label="third page">
+                3
+              </button>
+              <button class="
+                  slider__button-pagination slider__button-pagination--tablet
+                " aria-label="fourth page">
+                4
+              </button>
+              <button class="
+                  slider__button-pagination slider__button-pagination--tablet
+                " aria-label="fifth page">
+                5
+              </button>
+              <button class="
+                  slider__button-pagination slider__button-pagination--tablet
+                " aria-label="sixth page">
+                6
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog">
+          <h2 class="blog__title">Blog</h2>
+          <a class="blog__link underlined-link" href="#">Read All</a>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <picture class="blog__picture"><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/blog-1-mobile-@1x.webp 1x,
+                    img/content/blog-1-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/blog-1-tablet-@1x.webp 1x,
+                    img/content/blog-1-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/blog-1-desktop-@1x.webp 1x,
+                    img/content/blog-1-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/blog-1-mobile-@1x.jpg 1x,
+                    img/content/blog-1-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/blog-1-tablet-@1x.jpg 1x,
+                    img/content/blog-1-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 285px; 2x: 570px -->
+                <img src="img/content/blog-1-desktop-@1x.jpg" srcset="
+                    img/content/blog-1-desktop-@1x.jpg 1x,
+                    img/content/blog-1-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="285" height="300"></picture>
+              <article class="blog__article">
+                <span>September 30, 2019</span>
+                <h3>How to care for your jewellery</h3>
+                <a class="underlined-link" href="#">Read Article</a>
+              </article>
+            </li>
+            <li class="blog__item blog__item--second">
+              <picture class="blog__picture"><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/blog-2-mobile-@1x.webp 1x,
+                    img/content/blog-2-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/blog-2-tablet-@1x.webp 1x,
+                    img/content/blog-2-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/blog-2-desktop-@1x.webp 1x,
+                    img/content/blog-2-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/blog-2-mobile-@1x.jpg 1x,
+                    img/content/blog-2-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/blog-2-tablet-@1x.jpg 1x,
+                    img/content/blog-2-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 285px; 2x: 570px -->
+                <img src="img/content/blog-2-desktop-@1x.jpg" srcset="
+                    img/content/blog-2-desktop-@1x.jpg 1x,
+                    img/content/blog-2-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="285" height="300"></picture>
+              <article class="blog__article">
+                <span>September 23, 2019</span>
+                <h3>Power of crystals</h3>
+                <a class="underlined-link" href="#">Read Article</a>
+              </article>
+            </li>
+            <li class="blog__item blog__item--big">
+              <picture class="blog__picture"><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/blog-3-mobile-@1x.webp 1x,
+                    img/content/blog-3-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/blog-3-tablet-@1x.webp 1x,
+                    img/content/blog-3-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/blog-3-desktop-@1x.webp 1x,
+                    img/content/blog-3-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/blog-3-mobile-@1x.jpg 1x,
+                    img/content/blog-3-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/blog-3-tablet-@1x.jpg 1x,
+                    img/content/blog-3-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 285px; 2x: 570px -->
+                <img src="img/content/blog-3-desktop-@1x.jpg" srcset="
+                    img/content/blog-3-desktop-@1x.jpg 1x,
+                    img/content/blog-3-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="285" height="300"></picture>
+              <article class="blog__article">
+                <span>September 16, 2019</span>
+                <h3>AW 19 trends</h3>
+                <a class="underlined-link" href="#">Read Article</a>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="faq">
+          <h2 class="faq__title">Frequently asked questions</h2>
+          <ul class="faq__list accordion">
+            <li class="faq__item accordion__item">
+              <button class="faq__question accordion__button">
+                What materials are the jewellery made of?
+              </button>
+              <p class="faq__answer accordion__content">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </p>
+            </li>
+            <li class="faq__item accordion__item">
+              <button class="faq__question accordion__button">
+                Which countries do you deliver to?
+              </button>
+              <p class="faq__answer accordion__content">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </p>
+            </li>
+            <li class="faq__item accordion__item">
+              <button class="faq__question accordion__button">
+                What are the payment methods?
+              </button>
+              <p class="faq__answer accordion__content">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </p>
+            </li>
+            <li class="faq__item accordion__item">
+              <button class="faq__question accordion__button">
+                Can I return the jewellery if it didn’t fit me?
+              </button>
+              <p class="faq__answer accordion__content">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="instagram">
+          <h2 class="instagram__title"><span>@</span>Chjewellery</h2>
+          <a class="instagram__link underlined-link" href="#">Follow Us</a>
+          <ul class="instagram__list">
+            <li class="instagram__item">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-1-mobile-@1x.webp 1x,
+                    img/content/instagram-1-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-1-tablet-@1x.webp 1x,
+                    img/content/instagram-1-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-1-desktop-@1x.webp 1x,
+                    img/content/instagram-1-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-1-mobile-@1x.jpg 1x,
+                    img/content/instagram-1-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-1-tablet-@1x.jpg 1x,
+                    img/content/instagram-1-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-1-desktop-@1x.jpg" srcset="
+                    img/content/instagram-1-desktop-@1x.jpg 1x,
+                    img/content/instagram-1-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="230">
+              </picture>
+            </li>
+            <li class="instagram__item instagram__item--big">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-2-mobile-@1x.webp 1x,
+                    img/content/instagram-2-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-2-tablet-@1x.webp 1x,
+                    img/content/instagram-2-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-2-desktop-@1x.webp 1x,
+                    img/content/instagram-2-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-2-mobile-@1x.jpg 1x,
+                    img/content/instagram-2-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-2-tablet-@1x.jpg 1x,
+                    img/content/instagram-2-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-2-desktop-@1x.jpg" srcset="
+                    img/content/instagram-2-desktop-@1x.jpg 1x,
+                    img/content/instagram-2-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="230">
+              </picture>
+            </li>
+            <li class="instagram__item">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-3-mobile-@1x.webp 1x,
+                    img/content/instagram-3-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-3-tablet-@1x.webp 1x,
+                    img/content/instagram-3-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-3-desktop-@1x.webp 1x,
+                    img/content/instagram-3-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-3-mobile-@1x.jpg 1x,
+                    img/content/instagram-3-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-3-tablet-@1x.jpg 1x,
+                    img/content/instagram-3-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-3-desktop-@1x.jpg" srcset="
+                    img/content/instagram-3-desktop-@1x.jpg 1x,
+                    img/content/instagram-3-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="230">
+              </picture>
+            </li>
+            <li class="instagram__item">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-4-mobile-@1x.webp 1x,
+                    img/content/instagram-4-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-4-tablet-@1x.webp 1x,
+                    img/content/instagram-4-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-4-desktop-@1x.webp 1x,
+                    img/content/instagram-4-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-4-mobile-@1x.jpg 1x,
+                    img/content/instagram-4-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-4-tablet-@1x.jpg 1x,
+                    img/content/instagram-4-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-4-desktop-@1x.jpg" srcset="
+                    img/content/instagram-4-desktop-@1x.jpg 1x,
+                    img/content/instagram-4-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="230">
+              </picture>
+            </li>
+            <li class="instagram__item">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-5-mobile-@1x.webp 1x,
+                    img/content/instagram-5-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-5-tablet-@1x.webp 1x,
+                    img/content/instagram-5-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-5-desktop-@1x.webp 1x,
+                    img/content/instagram-5-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-5-mobile-@1x.jpg 1x,
+                    img/content/instagram-5-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-5-tablet-@1x.jpg 1x,
+                    img/content/instagram-5-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-5-desktop-@1x.jpg" srcset="
+                    img/content/instagram-5-desktop-@1x.jpg 1x,
+                    img/content/instagram-5-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="150">
+              </picture>
+            </li>
+            <li class="instagram__item">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-6-mobile-@1x.webp 1x,
+                    img/content/instagram-6-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-6-tablet-@1x.webp 1x,
+                    img/content/instagram-6-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-6-desktop-@1x.webp 1x,
+                    img/content/instagram-6-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-6-mobile-@1x.jpg 1x,
+                    img/content/instagram-6-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-6-tablet-@1x.jpg 1x,
+                    img/content/instagram-6-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-6-desktop-@1x.jpg" srcset="
+                    img/content/instagram-6-desktop-@1x.jpg 1x,
+                    img/content/instagram-6-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="150">
+              </picture>
+            </li>
+            <li class="instagram__item">
+              <picture><source type="image/webp" media="(max-width: 767px)" srcset="
+                    img/content/instagram-7-mobile-@1x.webp 1x,
+                    img/content/instagram-7-mobile-@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="
+                    img/content/instagram-7-tablet-@1x.webp 1x,
+                    img/content/instagram-7-tablet-@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/content/instagram-7-desktop-@1x.webp 1x,
+                    img/content/instagram-7-desktop-@2x.webp 2x
+                  ">
+
+                <source media="(max-width: 767px)" srcset="
+                    img/content/instagram-7-mobile-@1x.jpg 1x,
+                    img/content/instagram-7-mobile-@2x.jpg 2x
+                  ">
+                <source media="(max-width: 1023px)" srcset="
+                    img/content/instagram-7-tablet-@1x.jpg 1x,
+                    img/content/instagram-7-tablet-@2x.jpg 2x
+                  ">
+                <!-- 1х: 230px; 2x: 460px -->
+                <img src="img/content/instagram-7-desktop-@1x.jpg" srcset="
+                    img/content/instagram-7-desktop-@1x.jpg 1x,
+                    img/content/instagram-7-desktop-@2x.jpg 2x
+                  " alt="Фотография ювелирного украшения" width="230" height="150">
+              </picture>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <section class="subscription">
+          <h2 class="subscription__title">The good stuff in your inbox</h2>
+          <p class="subscription__description">
+            News and updates from CH. No spam, we promise.
+          </p>
+          <div class="subscription__form">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label>
+                <input type="email" name="email" placeholder="Your E-mail" required="">
+              </label>
+              <button type="submit">
+                <span>Sign Up</span>
+                <svg width="30" height="10">
+                  <use xlink:href="img/sprite_auto.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </section>
+        <div class="footer__info-block">
+          <section class="about">
+            <h2 class="visually-hidden">More about us and our services</h2>
+            <ul class="about__list">
+              <li class="about__item">
+                <a class="about__link" href="#">Ordering & Payment</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Returns & Exchanges</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Delivery</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">About CH</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Jobs</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </section>
+          <section class="social">
+            <h2 class="visually-hidden">Follow us on social networks</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://facebook.com/">
+                  <svg width="8" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://instagram.com/">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://pinterest.com/">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-pint"></use>
+                  </svg>
+                  <span>Pinterest</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com/">
+                  <svg width="15" height="13">
+                    <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                  </svg>
+                  <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <div class="login-overlay">
+      <div class="login">
+        <div class="login__decor">
+          <button class="login__button-close" type="button" aria-label="button close popup"></button>
+        </div>
+        <h1 class="login__title">Log In</h1>
+        <div class="login__form">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="email">
+              <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
+            </label>
+            <label for="password">
+              <input type="password" name="password" id="password" placeholder="Password" required="">
+            </label>
+            <a class="login__forgot-password" href="#">Forgot your password?</a>
+            <button class="login__submit" type="submit">Log In</button>
+          </form>
+          <div class="login__advice">
+            <span class="login__advice-span">Don’t have an account?</span>
+            <a class="login__advice-link" href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
