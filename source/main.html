@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="page-html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Online jewelry store" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-italic.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-medium-italic.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-semi-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body class="page-body">
+    <header class="header">
+      <h1 class="visually-hidden">Online jewelry store</h1>
+      <div class="header__upper-block container">
+        <button
+          class="header__toggle-menu no-js"
+          type="button"
+          aria-label="open/close menu button"
+        ></button>
+        <a class="header__logo">
+          <img
+            src="img/svg/logo.svg"
+            alt="Логотип компании Jewellery"
+            width="66"
+            height="66"
+          />
+        </a>
+        <div class="user-nav">
+          <a
+            class="user-nav__link-login user-nav__link link-login"
+            href="modal-login.html"
+            >Login
+          </a>
+          <a class="user-nav__link-cart user-nav__link" href="#">
+            <span>Cart 0</span>
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__form-search">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <button
+              class="header__form-search-button"
+              type="submit"
+              aria-label="search"
+            >
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label>
+              <input
+                type="text"
+                name="search"
+                placeholder="Type here to search"
+              />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="header__lower-block">
+        <nav class="main-nav container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">What’s new</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Chokers</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Necklaces</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Rings</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Earrings</a>
+            </li>
+          </ul>
+          <ul class="main-nav__additional-list">
+            <li class="main-nav__additional-item">
+              <a class="main-nav__additional-link" href="#">About CH</a>
+            </li>
+            <li class="main-nav__additional-item">
+              <a class="main-nav__additional-link" href="#">Stores & Hours</a>
+            </li>
+            <li class="main-nav__additional-item">
+              <a class="main-nav__additional-link" href="#">Contact Us</a>
+            </li>
+            <li class="main-nav__additional-item">
+              <a
+                class="
+                  main-nav__additional-link main-nav__additional-link-login
+                  link-login
+                "
+                href="login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2>ГЛАВНАЯ СТРАНИЦА</h2>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <section class="subscription">
+          <h2 class="subscription__title">The good stuff in your inbox</h2>
+          <p class="subscription__description">
+            News and updates from CH. No spam, we promise.
+          </p>
+          <div class="subscription__form">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your E-mail"
+                  required
+                />
+              </label>
+              <button type="submit">
+                <span>Sign Up</span>
+                <svg width="30" height="10">
+                  <use xlink:href="img/sprite_auto.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </section>
+        <div class="footer__info-block">
+          <section class="about">
+            <h2 class="visually-hidden">More about us and our services</h2>
+            <ul class="about__list">
+              <li class="about__item">
+                <a class="about__link" href="#">Ordering & Payment</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Returns & Exchanges</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Delivery</a>
+              </li>
+            </ul>
+            <ul class="about__list">
+              <li class="about__item">
+                <a class="about__link" href="#">About CH</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Jobs</a>
+              </li>
+              <li class="about__item">
+                <a class="about__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </section>
+          <section class="social">
+            <h2 class="visually-hidden">Follow us on social networks</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://facebook.com/">
+                  <svg width="8" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://instagram.com/">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://pinterest.com/">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-pint"></use>
+                  </svg>
+                  <span>Pinterest</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com/">
+                  <svg width="15" height="13">
+                    <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                  </svg>
+                  <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

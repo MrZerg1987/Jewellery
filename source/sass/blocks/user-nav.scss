@@ -2,8 +2,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-top: 7px;
   width: 174px;
+  margin-top: 7px;
 
   @media (max-width: $tablet-width) {
     align-items: center;
@@ -25,8 +25,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 0;
     margin-left: 5px;
+    padding: 0;
   }
 }
 
