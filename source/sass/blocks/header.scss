@@ -21,12 +21,36 @@
 
 .header.is-js {
   @media (max-width: $tablet-width) {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     z-index: 20;
 
-    overflow-y: auto;
+    overflow-y: scroll;
+
+    color: $color-white;
 
     background-color: $color-brown;
+
+    .header__logo {
+      color: $color-white;
+    }
+
+    .header__toggle-menu {
+      width: 25px;
+      height: 20px;
+
+      background-image: url("../img/svg/close-menu.svg");
+      background-repeat: no-repeat;
+    }
+
+    .header__form-search form {
+      background: rgba($color-white, 0.15);
+    }
+
+    .header__form-search button {
+      color: $color-white;
+    }
   }
 }
 
@@ -36,6 +60,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   padding-bottom: 19px;
 
   font-size: 14px;
@@ -85,6 +110,25 @@
 
 .header__toggle-menu.no-js {
   opacity: 0;
+}
+
+.header__logo {
+  display: flex;
+
+  color: $color-brown;
+
+  @media (max-width: $mobile-width) {
+    svg {
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
+
+.header__logo--login {
+  width: 66px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .header__form-search {
@@ -186,21 +230,4 @@
       border-radius: 15px;
     }
   }
-}
-
-.header__logo {
-  display: flex;
-
-  justify-self: center;
-
-  @media (max-width: $mobile-width) {
-    width: 52px;
-    height: 52px;
-  }
-}
-
-.header__logo--login {
-  width: 66px;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }

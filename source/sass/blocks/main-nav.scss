@@ -47,7 +47,8 @@
   font-size: 18px;
   line-height: 23px;
   font-family: $font-family--poppins;
-  color: rgba($color-black, 0.75);
+
+  opacity: 0.75;
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -73,11 +74,11 @@
   padding: 10px;
 
   &:hover {
-    color: $color-brown;
+    text-decoration: underline;
   }
 
   &:active {
-    text-decoration: underline;
+    opacity: 0.6;
   }
 
   @media (max-width: $tablet-width) {
@@ -90,16 +91,14 @@
   padding: 10px 0;
 
   &:hover {
-    color: $color-brown;
+    text-decoration: underline;
   }
 
   &:active {
-    text-decoration: underline;
+    opacity: 0.6;
   }
 }
 
 .main-nav__additional-link-login {
   margin: 24px 0;
-
-  color: $color-black;
 }
