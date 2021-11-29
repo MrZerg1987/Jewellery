@@ -1264,14 +1264,17 @@ img {
 }
 
 .slider {
-  position: relative;
   width: 100%;
   font-style: normal;
   font-family: "Poppins", "Arial", sans-serif;
   text-align: center;
 }
 
-.slider__arrow {
+.slider__navigation {
+  position: relative;
+}
+
+.slider__button-navigation {
   position: absolute;
   top: -110px;
   width: 30px;
@@ -1286,34 +1289,30 @@ img {
   cursor: pointer;
 }
 
-.slider__arrow:active {
+.slider__button-navigation:active {
   opacity: 0.7;
 }
 
-.slider__arrow.swiper-button-disabled {
+.swiper-button-disabled {
   cursor: none;
   opacity: 0.3;
   pointer-events: none;
 }
 
-.slider__arrow--prev {
+.swiper-button-prev {
   left: 0;
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
-.slider__arrow--next {
+.swiper-button-next {
   right: 0;
 }
 
 .slider__container {
   width: 100%;
-  margin-bottom: 47px;
-  overflow-x: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  margin-bottom: 52px;
+  overflow: hidden;
 }
 
 .slider__list {
@@ -1322,7 +1321,6 @@ img {
   width: 0;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px;
   list-style: none;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -1334,10 +1332,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
 }
 
 .slider__link {
@@ -1365,8 +1363,8 @@ img {
 }
 
 .slider__picture {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .slider__picture img {
@@ -1400,13 +1398,13 @@ img {
 }
 
 .slider__pagination {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
@@ -1422,6 +1420,9 @@ img {
 }
 
 .swiper-pagination-bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 2px 4px;
   font-weight: 500;
   font-size: 15px;
@@ -1989,13 +1990,13 @@ img {
     margin-bottom: 51px;
   }
 
-  .slider__arrow {
+  .slider__button-navigation {
     width: 38px;
     height: 38px;
   }
 
   .slider__container {
-    margin-bottom: 37px;
+    margin-bottom: 42px;
   }
 
   .social {
@@ -2217,12 +2218,12 @@ img {
     margin-bottom: 40px;
   }
 
-  .slider__arrow {
+  .slider__button-navigation {
     display: none;
   }
 
   .slider__container {
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 
   .slider__picture {
