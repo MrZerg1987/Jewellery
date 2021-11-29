@@ -1,31 +1,29 @@
 .about {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
   width: 100%;
   padding: 6px 0;
-
-  grid-column-gap: 10%;
-  grid-template-columns: 1fr 1fr;
 
   @media (max-width: $tablet-width) {
     grid-column-gap: 16%;
   }
 
   @media (max-width: $mobile-width) {
-    grid-row-gap: 29px;
     grid-template-columns: 1fr;
+    grid-row-gap: 29px;
   }
 }
 
 .about__list {
-  display: grid;
   width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
-
-  grid-row-gap: 21px;
+  display: grid;
   grid-template-columns: 1fr;
+  grid-row-gap: 21px;
 
   @media (max-width: $tablet-width) {
     padding: 6px 0;

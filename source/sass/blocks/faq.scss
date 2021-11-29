@@ -1,0 +1,141 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 970px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 32px;
+  }
+}
+
+.faq__title {
+  margin: 0;
+  margin-bottom: 49px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: $font-family--cormorant-garamond;
+  text-align: center;
+  color: $color-special-black;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 28px;
+  }
+}
+
+.faq__list {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-style: normal;
+  font-family: $font-family--poppins;
+  color: $color-special-black;
+
+  border: 1px solid $color-brown;
+
+  grid-template-columns: 1fr;
+}
+
+.faq__item {
+  padding: 35px 0 34px;
+
+  border-bottom: 1px solid $color-brown;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}
+
+.faq__question {
+  width: 100%;
+  margin: 0;
+  padding: 9px 42px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+
+  background-color: transparent;
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    padding: 9px 49px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 16px 23px 20px;
+    font-size: 16px;
+    padding-right: 55px;
+  }
+
+  &::after {
+    top: 17px;
+    right: 49px;
+
+    @media (max-width: $tablet-width) {
+      top: 14px;
+      right: 51px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 22px;
+      right: 25px;
+    }
+  }
+}
+
+.faq__question--open {
+  &::after {
+    position: absolute;
+  }
+}
+
+.faq__question--close {
+  &::after {
+    position: absolute;
+
+    transform: rotate(-180deg);
+  }
+}
+
+.faq__answer {
+  max-width: 527px;
+  margin: 0 0 7px 49px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 530px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 23px;
+    margin-bottom: 17px;
+    margin-top: -7px;
+    font-size: 14px;
+    max-width: 71%;
+  }
+}

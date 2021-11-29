@@ -18,17 +18,19 @@
 //---------------------------------
 
 @import "blocks/about";
-// @import "blocks/accordion";
-// @import "blocks/blog";
-// @import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/blog";
+// @import "blocks/catalog";
+@import "blocks/faq";
+// @import "blocks/filter";
 @import "blocks/footer";
-@import "blocks/slider";
 @import "blocks/header";
-// @import "blocks/instagram";
+@import "blocks/instagram";
 @import "blocks/intro";
 // @import "blocks/login";
 @import "blocks/main-nav";
 @import "blocks/new";
+@import "blocks/slider";
 @import "blocks/social";
 @import "blocks/subscription";
 @import "blocks/underlined-link";
