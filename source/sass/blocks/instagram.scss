@@ -64,8 +64,8 @@
 }
 
 .instagram__list {
-  width: 100%;
   display: grid;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -81,9 +81,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 23px;
     grid-row-gap: 26px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

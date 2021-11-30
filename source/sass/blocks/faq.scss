@@ -83,8 +83,9 @@
 
   @media (max-width: $mobile-width) {
     padding: 16px 23px 20px;
-    font-size: 16px;
     padding-right: 55px;
+
+    font-size: 16px;
   }
 
   &::after {
@@ -127,15 +128,16 @@
 
   @media (max-width: $tablet-width) {
     max-width: 530px;
-    margin-bottom: 10px;
     margin-top: 18px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-left: 23px;
-    margin-bottom: 17px;
-    margin-top: -7px;
-    font-size: 14px;
     max-width: 71%;
+    margin-top: -7px;
+    margin-bottom: 17px;
+    margin-left: 23px;
+
+    font-size: 14px;
   }
 }

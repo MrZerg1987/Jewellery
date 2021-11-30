@@ -1,0 +1,211 @@
+.login {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  margin: auto;
+  padding-bottom: 45px;
+
+  background: $color-light-orange;
+  box-shadow: 0 5px 32px rgba($color-shadow, 0.24);
+
+  @media (max-width: $tablet-width) {
+    width: 442px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+  }
+}
+
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color-black, 0.7);
+}
+
+.login-active {
+  display: flex;
+}
+
+.login__decor {
+  width: 100%;
+  height: 138px;
+  margin-bottom: 50px;
+
+  background-color: $color-brown;
+  background-image: url("../img/content/login-intro-@1x.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/content/login-intro-@2x.jpg");
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 84px;
+  }
+}
+
+.login__button-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+  display: flex;
+  width: 17px;
+  height: 17px;
+  padding: 15px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/close-popup.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: inset 0 0 10px 10px rgba($color-white, 0.2);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 10px 10px rgba($color-white, 0.4);
+  }
+}
+
+.login__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: $font-family--cormorant-garamond;
+  text-align: center;
+  color: $color-special-black;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 45px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-family--poppins;
+  color: $color-grey;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 51px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.login__form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.login__form label {
+  width: 100%;
+
+  border-bottom: 1px solid $color-special-black;
+
+  &:first-child {
+    margin-bottom: 28px;
+  }
+}
+
+.login__form input {
+  width: 100%;
+  padding: 10px 0;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover::placeholder {
+    color: $color-brown;
+  }
+}
+
+.login__form input.check-input {
+  box-shadow: 0 0 2px 2px $color-red;
+}
+
+.login__forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  padding: 5px 0;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.login__submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 25px;
+
+  font-size: 16px;
+  color: $color-white;
+
+  background-color: $color-brown;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 1px 1px $color-brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.login__advice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__advice-link {
+  display: flex;
+  padding: 8px;
+
+  color: $color-special-black;
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}

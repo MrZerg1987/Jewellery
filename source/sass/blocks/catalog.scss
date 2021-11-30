@@ -1,0 +1,184 @@
+.catalog {
+  position: relative;
+
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 73px;
+
+  font-style: normal;
+  font-family: $font-family--poppins;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $color-special-white;
+  }
+}
+
+.catalog__wrapper {
+  display: grid;
+  width: 100%;
+
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr 3fr;
+}
+
+.catalog__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.catalog__list {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 69px;
+  padding: 0;
+
+  list-style: none;
+
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.catalog__item {
+  display: flex;
+  width: 100%;
+}
+
+.catalog__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  color: $color-special-black;
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline-offset: -2px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+  }
+}
+
+.catalog__picture {
+  margin-bottom: 21px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.catalog__picture img {
+  width: 100%;
+
+  pointer-events: none;
+}
+
+.catalog__description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.catalog__price {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog__pagination {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog__pagination-button {
+  display: flex;
+  justify-content: flex-end;
+  width: 67px;
+  margin: 0;
+  padding: 3px 0;
+
+  text-align: center;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.catalog__pagination-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  grid-column-gap: 6px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.catalog__pagination-number {
+  display: flex;
+  margin: 0;
+  padding: 3px;
+
+  font-size: 15px;
+  line-height: 19px;
+  color: $color-grey;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.catalog__pagination-number.active {
+  font-weight: 500;
+  color: $color-special-black;
+
+  pointer-events: none;
+}

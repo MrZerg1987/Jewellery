@@ -18,7 +18,6 @@ export const initAccordion = function () {
 
   initJs();
   accordions.forEach(function (accordion) {
-    // const accordionItems = accordion.querySelectorAll('.accordion__item');
 
     accordion.addEventListener('click', function (evt) {
       if (evt.target.classList.contains('accordion__button')) {
@@ -27,9 +26,6 @@ export const initAccordion = function () {
           parent.classList.remove('is-active');
           return;
         }
-        // accordionItems.forEach(function (el) {
-        //   el.classList.remove('is-active');
-        // });
         parent.classList.add('is-active');
       }
     });

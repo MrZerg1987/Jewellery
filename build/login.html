@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="page-html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Online jewelry store" />
+
+    <link rel="icon" href="favicon/favicon.ico" />
+
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-italic.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-medium-italic.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-semi-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="visually-hidden">Online jewelry store</h1>
+      <a class="header__logo header__logo--login" href="main.html">
+        <img
+          src="img/svg/logo.svg"
+          alt="Логотип компании Jewellery"
+          width="66"
+          height="66"
+      /></a>
+    </header>
+
+    <main>
+      <div class="login">
+        <div class="login__decor"></div>
+        <h1 class="login__title">Log In</h1>
+        <div class="login__form">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your E-mail"
+                required
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+            <a class="login__forgot-password" href="#">Forgot your password?</a>
+            <button class="login__submit" type="submit">Log In</button>
+          </form>
+          <div class="login__advice">
+            <span class="login__advice-span">Don’t have an account?</span>
+            <a class="login__advice-link" href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

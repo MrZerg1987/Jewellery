@@ -795,61 +795,6 @@
               </ul>
             </div>
             <div class="slider__pagination swiper-pagination">
-              <!-- <ul class="slider__pagination-list desktop">
-                <li class="slider__pagination-item">
-                  <button
-                    class="slider__pagination-button active"
-                    aria-label="first page"
-                  >
-                    1
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button
-                    class="slider__pagination-button"
-                    aria-label="second page"
-                  >
-                    2
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button
-                    class="slider__pagination-button"
-                    aria-label="third page"
-                  >
-                    3
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button
-                    class="slider__pagination-button tablet"
-                    aria-label="fourth page"
-                  >
-                    4
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button
-                    class="slider__pagination-button tablet"
-                    aria-label="fifth page"
-                  >
-                    5
-                  </button>
-                </li>
-                <li class="slider__pagination-item">
-                  <button
-                    class="slider__pagination-button tablet"
-                    aria-label="sixth page"
-                  >
-                    6
-                  </button>
-                </li>
-              </ul>
-              <ul class="slider__pagination-list mobile">
-                <li class="slider__pagination-item active">1</li>
-                <li class="slider__pagination-item">of</li>
-                <li class="slider__pagination-item">6</li>
-              </ul> -->
             </div>
           </div>
         </section>
@@ -1511,6 +1456,47 @@
         </div>
       </div>
     </footer>
+
+    <div class="login-overlay">
+      <div class="login">
+        <div class="login__decor">
+          <button
+            class="login__button-close"
+            type="button"
+            aria-label="button close popup"
+          ></button>
+        </div>
+        <h1 class="login__title">Log In</h1>
+        <div class="login__form">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your E-mail"
+                required
+              />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+            <a class="login__forgot-password" href="#">Forgot your password?</a>
+            <button class="login__submit" type="submit">Log In</button>
+          </form>
+          <div class="login__advice">
+            <span class="login__advice-span">Don’t have an account?</span>
+            <a class="login__advice-link" href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
