@@ -11,13 +11,26 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 120px;
+    bottom: 132px;
     left: 0;
 
     width: 100%;
     height: 1px;
 
     background-color: $color-special-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
+    padding-bottom: 63px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -26,13 +39,45 @@
   width: 100%;
 
   grid-column-gap: 50px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 250px 3fr;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalog__list-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.catalog__button-open-filter {
+  margin-bottom: 50px;
+  padding: 25px;
+  display: none;
+  justify-content: center;
+
+  color: $color-white;
+
+  background-color: $color-brown;
+  border: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__list {
@@ -47,6 +92,15 @@
   grid-column-gap: 30px;
   grid-row-gap: 35px;
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-row-gap: 24px;
+    margin-bottom: 38px;
+  }
 }
 
 .catalog__item {
@@ -71,10 +125,6 @@
 
   &:focus {
     outline-offset: -2px;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 324px;
   }
 }
 
@@ -119,6 +169,10 @@
 
   font-size: 16px;
   line-height: 21px;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
 }
 
 .catalog__pagination-button {
@@ -141,6 +195,10 @@
   &:active {
     text-decoration: underline;
   }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .catalog__pagination-list {
@@ -150,8 +208,12 @@
 
   list-style: none;
 
-  grid-column-gap: 6px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 8px;
+  grid-template-columns: repeat(5, max-content);
+
+  @media (max-width: $mobile-width) {
+    grid-column-gap: 18px;
+  }
 }
 
 .catalog__pagination-number {

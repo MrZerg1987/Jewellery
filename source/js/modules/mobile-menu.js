@@ -1,3 +1,5 @@
+import {isEscEvent} from '../utils/utils';
+
 const toggle = document.querySelector('.header__toggle-menu');
 const header = document.querySelector('.header');
 const navList = document.querySelector('.header__lower-block');
@@ -9,44 +11,61 @@ toggle.classList.remove('no-js');
 navList.classList.add('block-close');
 formSearch.classList.add('block-close');
 
-const toggleMenu = () => {
-  if (navList.classList.contains('block-close')) {
-    navList.classList.remove('block-close');
-    document.body.classList.add('scroll-lock');
-    header.classList.add('is-js');
-    return;
+const hideMenu = () => {
+  if (!navList.classList.contains('block-close')) {
+    navList.classList.add('block-close');
+    header.classList.remove('is-open');
+    document.body.classList.remove('scroll-lock');
   }
-  navList.classList.add('block-close');
-  header.classList.remove('is-js');
-  document.body.classList.remove('scroll-lock');
+
+  if (!formSearch.classList.contains('block-close')) {
+    formSearch.classList.add('block-close');
+  }
 };
 
-const toggleFormSearch = () => {
+const openMenu = () => {
+  navList.classList.remove('block-close');
+  document.body.classList.add('scroll-lock');
+  header.classList.add('is-open');
+
   if (formSearch.classList.contains('block-close')) {
     formSearch.classList.remove('block-close');
-    return;
   }
-  formSearch.classList.add('block-close');
+
 };
 
 const onClickToggle = () => {
-  toggleMenu();
-  toggleFormSearch();
+  if (navList.classList.contains('block-close') && formSearch.classList.contains('block-close')) {
+    openMenu();
+    return;
+  }
+  hideMenu();
 };
 
 const onClickNavLink = () => {
-  toggleMenu();
-  toggleFormSearch();
+  hideMenu();
+};
+
+const onKeyEscKeydown = (evt) => {
+  if (isEscEvent(evt)) {
+    hideMenu();
+  }
 };
 
 export const initMobileMenu = () => {
-  if (toggle) {
-    toggle.addEventListener('click', onClickToggle);
+  if (!toggle) {
+    return;
   }
+  if (header.offsetWidth > 1024) {
+    hideMenu();
+  }
+  toggle.addEventListener('click', onClickToggle);
   navLinks.forEach((link) => {
     link.addEventListener('click', onClickNavLink);
   });
   navAdditionalLinks.forEach((link) => {
     link.addEventListener('click', onClickNavLink);
   });
+  document.addEventListener('keydown', onKeyEscKeydown);
+  window.addEventListener('resize', initMobileMenu);
 };

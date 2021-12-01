@@ -7,7 +7,7 @@ const initJs = function () {
     accordionContent.classList.add('is-hidden');
   });
   accordionButtons.forEach(function (accordionButton) {
-    accordionButton.classList.add('is-js');
+    accordionButton.classList.add('is-open');
   });
 };
 
