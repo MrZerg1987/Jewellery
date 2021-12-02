@@ -1,7 +1,6 @@
 import {hidePopup} from './popup';
 
-const overlayPopup = document.querySelector('.login-overlay');
-const userEmail = overlayPopup.querySelector('[name=email]');
+const userEmail = document.querySelector('.login__form [name=email]');
 
 const removeError = function (form) {
   const errors = form.querySelectorAll('.check-input');
@@ -44,6 +43,10 @@ const onFormSubmit = function (evt) {
 };
 
 export const initValidateForm = function () {
+  if (!form) {
+    return;
+  }
+
   const form = document.querySelector('.login__form form');
   form.noValidate = true;
   form.addEventListener('submit', onFormSubmit);

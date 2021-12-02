@@ -9,9 +9,5 @@
 }
 
 .scroll-lock {
-  @media (max-width: $tablet-width) {
-    position: fixed;
-
-    overflow: hidden;
-  }
+  overflow: hidden;
 }

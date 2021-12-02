@@ -159,6 +159,16 @@
 
 .filter__item {
   display: flex;
+
+  input {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
+    clip: rect(0 0 0 0);
+  }
 }
 
 .filter__item label {

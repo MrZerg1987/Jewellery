@@ -448,6 +448,10 @@ template {
   clip: rect(0 0 0 0);
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   min-width: 1024px;
@@ -515,6 +519,8 @@ img {
 .about__list {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: start;
+  align-content: start;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -668,7 +674,6 @@ img {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100%;
 }
 
 .blog__item--big article {
@@ -682,7 +687,6 @@ img {
 
 .blog__picture {
   width: 50%;
-  height: 100%;
 }
 
 .blog__picture img {
@@ -1002,7 +1006,6 @@ img {
 }
 
 .faq__item {
-  padding: 35px 0 34px;
   border-bottom: 1px solid #a87b62;
 }
 
@@ -1013,7 +1016,7 @@ img {
 .faq__question {
   width: 100%;
   margin: 0;
-  padding: 9px 42px;
+  padding: 44px 42px 43px;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -1023,7 +1026,7 @@ img {
 }
 
 .faq__question::after {
-  top: 17px;
+  top: 51px;
   right: 49px;
 }
 
@@ -1039,7 +1042,7 @@ img {
 
 .faq__answer {
   max-width: 527px;
-  margin: 0 0 7px 49px;
+  margin: -35px 0 43px 49px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1174,6 +1177,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.filter__item input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 .filter__item label {
@@ -1934,10 +1945,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-bottom: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 0 40px auto;
   padding: 5px 0;
   font-size: 12px;
   line-height: 18px;
@@ -2036,8 +2047,8 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
+  margin-top: 28px;
   padding: 0;
-  padding-top: 28px;
   list-style: none;
   font-style: normal;
   font-weight: 500;
@@ -2095,7 +2106,7 @@ img {
 }
 
 .main-nav__additional-link-login {
-  margin: 24px 0;
+  margin-top: 24px;
 }
 
 .new {
@@ -2147,6 +2158,8 @@ img {
 .social__list {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: start;
+  align-content: start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2242,6 +2255,7 @@ img {
 .subscription__form input {
   width: 100%;
   padding: 10px 0;
+  color: #ffffff;
   background-color: transparent;
   border: none;
 }
@@ -2386,11 +2400,6 @@ img {
 }
 
 @media (max-width: 1023px) {
-  .scroll-lock {
-    position: fixed;
-    overflow: hidden;
-  }
-
   .container {
     min-width: 768px;
     max-width: 1023px;
@@ -2473,18 +2482,18 @@ img {
   }
 
   .faq__question {
-    padding: 9px 49px;
+    padding-left: 48px;
   }
 
   .faq__question::after {
-    top: 14px;
+    top: 48px;
     right: 51px;
   }
 
   .faq__answer {
     max-width: 530px;
-    margin-top: 18px;
-    margin-bottom: 10px;
+    margin-top: -17px;
+    margin-bottom: 45px;
   }
 
   .filter-overlay {
@@ -3009,6 +3018,10 @@ img {
     height: 52px;
   }
 
+  .header__form-search {
+    margin-top: 30px;
+  }
+
   .instagram {
     padding-top: 50px;
     padding-bottom: 71px;
@@ -3058,14 +3071,52 @@ img {
 
   .login {
     width: 270px;
+    margin-top: 27px;
+    padding-bottom: 31px;
   }
 
   .login__decor {
     height: 84px;
+    margin-bottom: 36px;
+  }
+
+  .login__button-close {
+    top: 8px;
+    right: 8px;
+  }
+
+  .login__title {
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .login__form {
     padding: 0 15px;
+  }
+
+  .login__form label:first-child {
+    margin-bottom: 23px;
+  }
+
+  .login__forgot-password {
+    margin-bottom: 30px;
+  }
+
+  .login__advice-link {
+    padding: 8px 4px;
+  }
+
+  .main-nav {
+    margin-top: 33px;
+  }
+
+  .main-nav__additional-list {
+    margin-top: 18px;
+  }
+
+  .main-nav__additional-link-login {
+    margin-top: 15px;
   }
 
   .new {

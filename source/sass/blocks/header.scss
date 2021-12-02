@@ -144,6 +144,10 @@
 
     grid-column: span 3;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }
 
 .header__form-search.block-close {

@@ -3,17 +3,26 @@ import {isEscEvent} from '../utils/utils';
 const linksLogIn = document.querySelectorAll('.link-login');
 const overlayPopup = document.querySelector('.login-overlay');
 const buttonClosePopup = document.querySelector('.login__button-close');
-const userEmail = overlayPopup.querySelector('[name=email]');
-const userPassword = overlayPopup.querySelector('[name=password]');
+const userEmail = document.querySelector('.login__form [name=email]');
+const userPassword = document.querySelector('.login__form [name=password]');
 
 let storage = localStorage.getItem('name');
+
+export const hidePopup = () => {
+  overlayPopup.classList.remove('login-active');
+  document.body.classList.remove('scroll-lock');
+};
+
+const openPopup = () => {
+  overlayPopup.classList.add('login-active');
+  document.body.classList.add('scroll-lock');
+};
 
 const onButtonLogInClick = (evt) => {
   evt.preventDefault();
   if (!overlayPopup.classList.contains('login-active')) {
-    overlayPopup.classList.add('login-active');
+    openPopup();
   }
-  document.body.classList.add('scroll-lock');
 
   if (storage) {
     userEmail.value = storage;
@@ -23,14 +32,11 @@ const onButtonLogInClick = (evt) => {
   userEmail.focus();
 };
 
-export const hidePopup = () => {
+const onButtonCloseClick = () => {
   if (overlayPopup.classList.contains('login-active')) {
-    overlayPopup.classList.remove('login-active');
+    hidePopup();
   }
-  document.body.classList.remove('scroll-lock');
 };
-
-const onButtonCloseClick = () => hidePopup();
 
 const onKeyEscKeydown = (evt) => {
   if (isEscEvent(evt)) {
@@ -45,13 +51,13 @@ const onOverlayClick = (evt) => {
 };
 
 export const initPopup = () => {
-  if (!overlayPopup) {
+  if (!overlayPopup || !buttonClosePopup) {
     return;
   }
   linksLogIn.forEach((link) => {
     link.addEventListener('click', onButtonLogInClick);
   });
+  overlayPopup.addEventListener('click', onOverlayClick);
   buttonClosePopup.addEventListener('click', onButtonCloseClick);
   document.addEventListener('keydown', onKeyEscKeydown);
-  overlayPopup.addEventListener('click', onOverlayClick);
 };

@@ -7,10 +7,6 @@ const navLinks = document.querySelectorAll('.main-nav__link');
 const navAdditionalLinks = document.querySelectorAll('.main-nav__additional-link');
 const formSearch = document.querySelector('.header__form-search');
 
-toggle.classList.remove('no-js');
-navList.classList.add('block-close');
-formSearch.classList.add('block-close');
-
 const hideMenu = () => {
   if (!navList.classList.contains('block-close')) {
     navList.classList.add('block-close');
@@ -53,9 +49,14 @@ const onKeyEscKeydown = (evt) => {
 };
 
 export const initMobileMenu = () => {
-  if (!toggle) {
+  if (!toggle || !navList || !formSearch) {
     return;
   }
+
+  toggle.classList.remove('no-js');
+  navList.classList.add('block-close');
+  formSearch.classList.add('block-close');
+
   if (header.offsetWidth > 1024) {
     hideMenu();
   }
