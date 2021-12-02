@@ -734,7 +734,7 @@ img {
 }
 
 .blog__article a {
-  width: 107px;
+  width: 110px;
   margin: 0 auto 4px;
 }
 
@@ -1686,7 +1686,7 @@ img {
 }
 
 .instagram__link {
-  width: 85px;
+  width: 90px;
   margin-bottom: 61px;
   font-family: "Poppins", "Arial", sans-serif;
 }
@@ -1805,6 +1805,7 @@ img {
 
 .login-overlay {
   position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   z-index: 20;
@@ -2139,7 +2140,7 @@ img {
 }
 
 .new__link {
-  width: 91px;
+  width: 95px;
   margin-bottom: 55px;
 }
 
