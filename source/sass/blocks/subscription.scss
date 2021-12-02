@@ -49,10 +49,11 @@
   border-bottom: 1px solid $color-white;
 
   form {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: relative;
   }
 
   label {

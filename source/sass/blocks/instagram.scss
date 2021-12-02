@@ -3,19 +3,19 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 71px;
+  padding-top: 100px;
   padding-bottom: 132px;
 
   font-style: normal;
   color: $color-special-black;
 
   @media (max-width: $tablet-width) {
-    padding-top: 36px;
+    padding-top: 66px;
     padding-bottom: 80px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 71px;
   }
 }

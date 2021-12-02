@@ -4,15 +4,14 @@
   justify-content: center;
   max-width: 970px;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 30px;
+  padding-top: 119px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 39px;
+    padding-top: 69px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 32px;
+    padding-top: 62px;
   }
 }
 

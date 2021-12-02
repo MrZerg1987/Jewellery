@@ -2,8 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 174px;
-  margin-top: 7px;
+  margin-top: 11px;
 
   @media (max-width: $tablet-width) {
     align-items: center;
@@ -14,7 +13,14 @@
 
 .user-nav__link {
   display: flex;
-  padding: 5px 0;
+  max-width: 100px;
+  margin-right: 35px;
+
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:hover {
     color: $color-brown;
@@ -31,14 +37,18 @@
 }
 
 .user-nav__link-login {
-  margin-right: 37px;
-
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
 .user-nav__link-cart span {
+  display: flex;
+
+  &:first-child {
+    margin-right: 7px;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }

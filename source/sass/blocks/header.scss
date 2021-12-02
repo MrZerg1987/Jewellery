@@ -1,8 +1,6 @@
 .header {
   width: 100%;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 9px;
 
   font-style: normal;
   font-weight: 500;
@@ -55,25 +53,27 @@
 }
 
 .header__upper-block {
-  position: relative;
-
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-between;
   width: 100%;
-  padding-bottom: 19px;
+  padding-top: 30px;
+  padding-bottom: 18px;
 
   font-size: 14px;
   line-height: 21px;
 
+  grid-template-columns: 1fr min-content 1fr;
+
   @media (max-width: $tablet-width) {
     align-items: center;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 }
 
 .header__lower-block {
-  padding-top: 7px;
+  padding-top: 8px;
+  padding-bottom: 10px;
 
   border-top: 1px solid $color-special-white;
 
@@ -134,13 +134,15 @@
 .header__form-search {
   display: flex;
   order: -1;
-  width: 174px;
-  margin-top: 9px;
+  width: 100%;
+  margin-top: 10px;
 
   @media (max-width: $tablet-width) {
     order: 0;
     width: 100%;
     margin-top: 40px;
+
+    grid-column: span 3;
   }
 }
 
@@ -153,9 +155,10 @@
 .header__form-search form {
   display: flex;
   align-items: flex-start;
-  width: 100%;
+  width: 200px;
 
   @media (max-width: $tablet-width) {
+    width: 100%;
     padding: 7px;
 
     background: rgba($color-black, 0.15);
@@ -165,11 +168,11 @@
 
 .header__form-search button {
   display: flex;
-  padding: 5px 10px 5px 0;
+  margin-right: 5px;
+  padding: 5px 5px 5px 0;
 
   background-color: transparent;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
 
   &:hover {
@@ -182,6 +185,8 @@
 
   @media (max-width: $tablet-width) {
     padding: 5px;
+
+    border-radius: 50%;
 
     svg {
       width: 16px;
@@ -201,7 +206,7 @@
 }
 
 .header__form-search input {
-  width: 150px;
+  width: 190px;
   padding: 5px;
 
   border: none;

@@ -53,10 +53,10 @@
 }
 
 .catalog__button-open-filter {
-  margin-bottom: 50px;
-  padding: 25px;
   display: none;
   justify-content: center;
+  margin-bottom: 50px;
+  padding: 25px;
 
   color: $color-white;
 
@@ -98,8 +98,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    grid-row-gap: 24px;
     margin-bottom: 38px;
+
+    grid-row-gap: 24px;
   }
 }
 

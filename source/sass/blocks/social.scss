@@ -25,6 +25,7 @@
 
 .social__item {
   display: flex;
+  align-items: flex-start;
 
   &:first-child svg {
     width: 12px;
