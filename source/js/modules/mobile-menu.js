@@ -53,6 +53,7 @@ export const initMobileMenu = () => {
     return;
   }
 
+  hideMenu();
   toggle.classList.remove('no-js');
   navList.classList.add('block-close');
   formSearch.classList.add('block-close');
