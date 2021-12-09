@@ -43,11 +43,10 @@ const onFormSubmit = function (evt) {
 };
 
 export const initValidateForm = function () {
+  const form = document.querySelector('.login__form form');
   if (!form) {
     return;
   }
-
-  const form = document.querySelector('.login__form form');
   form.noValidate = true;
   form.addEventListener('submit', onFormSubmit);
 };
